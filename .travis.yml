@@ -5,9 +5,9 @@ addons:
     packages:
       - lib32stdc++6
 before_install:
-  echo -e "machine github.com\n login 5743b131f57d67c7a176bc3b792ee93c79a728c2" > ~/.netrc
-  brew install git-lfs
-  git lfs pull
+  - echo -e "machine github.com\n login 5743b131f57d67c7a176bc3b792ee93c79a728c2" > ~/.netrc
+  - brew install git-lfs
+  - git lfs pull
 before_script:
   git lfs pull
 install:
